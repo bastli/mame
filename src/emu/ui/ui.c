@@ -326,7 +326,7 @@ void ui_manager::display_startup_screens(bool first_time, bool show_disclaimer)
 
 	// loop over states
 	set_handler(handler_ingame, 0);
-	for (state = 0; state < maxstate && !machine().scheduled_event_pending() && !ui_menu::stack_has_special_main_menu(); state++)
+	for (state = 3; state < maxstate && !machine().scheduled_event_pending() && !ui_menu::stack_has_special_main_menu(); state++)
 	{
 		// default to standard colors
 		messagebox_backcolor = UI_BACKGROUND_COLOR;
